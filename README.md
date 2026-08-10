@@ -1,0 +1,95 @@
+# 物联网感知小组官方网站
+
+本项目是南京邮电大学计算机学院“物联网感知小组”的静态官方网站，用于展示课题组介绍、负责人信息、研究方向、学术成果、本科生科研招新与联系方式。
+
+当前版本中的未确认信息统一使用“待补充”，不代表真实的课题组资料。
+
+## 技术栈
+
+- HTML5
+- CSS3
+- 原生 JavaScript
+- GitHub Pages
+
+项目没有后端、数据库、前端框架或 npm 依赖。直接打开 `index.html` 即可查看主要内容。
+
+## 目录结构
+
+```text
+.
+├── index.html                 # 网站唯一主要页面
+├── css/
+│   └── style.css              # 全部样式与响应式规则
+├── js/
+│   └── main.js                # 移动导航、导航高亮与年份
+├── assets/
+│   └── images/                # 图片与占位图
+├── AGENTS.md                  # 后续 Coding Agent 维护规则
+├── README.md                  # 项目说明
+└── .nojekyll                  # GitHub Pages 静态文件标记
+```
+
+## 如何修改内容
+
+网站文字都在 `index.html` 中。搜索“待补充”可以快速定位尚未完善的内容。修改文字后保存文件并刷新浏览器即可查看结果。
+
+颜色、间距和字体统一定义在 `css/style.css` 顶部的 `:root` CSS Variables 中。除非需要调整整体视觉，不建议逐处修改颜色。
+
+## 如何添加研究方向
+
+在 `index.html` 中找到 `class="research-list"` 的区域。复制一个完整的 `article class="research-item"`，然后依次修改：
+
+- `Research Direction` 编号
+- 方向名称
+- 简介
+- 关键词
+
+## 如何添加论文
+
+在 `index.html` 中找到 `class="publication-list"` 的区域。复制一个完整的 `article class="publication-item"`，然后修改：
+
+- 编号
+- title
+- authors
+- venue
+- year
+- url
+
+有真实 URL 时，可以将 URL 文本改为 `<a href="真实链接">访问论文</a>`。
+
+## 如何添加本科生科研题目
+
+在 `index.html` 中找到 `class="opportunity-list"` 的区域。复制一个完整的 `article class="opportunity-item"`，然后修改：
+
+- 题目编号与名称
+- 研究方向
+- 题目简介
+- 主要工作
+- 基础要求
+- 指导教师
+- 状态
+
+题目状态使用“开放”或“暂停”。真实内容尚未发布时保持“内容待公布”。
+
+## 部署到 GitHub Pages
+
+### 首次连接并推送
+
+先在 GitHub 网站创建一个空仓库，不要勾选自动添加 README、`.gitignore` 或 License。然后在本项目目录执行：
+
+```bash
+git remote add origin https://github.com/你的用户名/你的仓库名.git
+git push -u origin main
+```
+
+首次推送时，Windows 上的 Git Credential Manager 通常会打开浏览器，请在浏览器中登录 GitHub 并授权。不要把密码或访问令牌写入本项目文件。
+
+### 开启 GitHub Pages
+
+1. 打开 GitHub 仓库页面，进入 **Settings**。
+2. 在左侧选择 **Pages**。
+3. 在 **Build and deployment** 下将 Source 设为 **Deploy from a branch**。
+4. Branch 选择 `main`，目录选择 `/ (root)`，然后点击 **Save**。
+5. 等待 GitHub 完成部署，Pages 页面会显示网站地址。
+
+网站使用相对资源路径，可直接部署在用户主页仓库或普通项目仓库中。
