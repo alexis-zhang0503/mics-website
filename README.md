@@ -19,7 +19,7 @@
 .
 ├── index.html                 # 网站首页
 ├── en/                         # 英文版页面
-├── platform.html              # 多模态感知平台详情页占位
+├── platform.html              # 多模态感知平台详情页
 ├── results.html               # 最新研究成果详情页占位
 ├── join.html                  # 本科生科研招新详情页占位
 ├── team.html                  # 团队成员完整名单
@@ -29,7 +29,7 @@
 ├── js/
 │   └── main.js                # 移动导航、导航高亮与年份
 ├── assets/
-│   └── images/                # 图片与占位图
+│   └── images/                # 图片、平台设备图与占位图
 ├── AGENTS.md                  # 后续 Coding Agent 维护规则
 ├── README.md                  # 项目说明
 └── .nojekyll                  # GitHub Pages 静态文件标记
@@ -37,7 +37,7 @@
 
 ## 如何修改内容
 
-首页文字主要在 `index.html` 中，平台、成果、招新和研究方向详情页分别在对应 HTML 文件中。搜索“待补充”可以快速定位尚未完善的内容。修改文字后保存文件并刷新浏览器即可查看结果。
+首页文字主要在 `index.html` 中，平台、成果、招新和研究方向详情页分别在对应 HTML 文件中。`platform.html` 与 `en/platform.html` 使用 `assets/images/platform/` 中从设备介绍 PPT 提取的图片资源。搜索“待补充”可以快速定位尚未完善的内容。修改文字后保存文件并刷新浏览器即可查看结果。
 
 颜色、间距和字体统一定义在 `css/style.css` 顶部的 `:root` CSS Variables 中。除非需要调整整体视觉，不建议逐处修改颜色。
 

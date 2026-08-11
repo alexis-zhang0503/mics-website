@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Multimodal Intelligent Communication and Sensing - sensing platform details.">
+    <meta name="description" content="Multimodal Intelligent Communication and Sensing - sensing platform details for WiFi CSI, BFI, millimeter-wave radar, and mobile robot validation.">
     <meta name="theme-color" content="#173f67">
     <title>Multimodal Sensing Platform | Multimodal Intelligent Communication and Sensing</title>
     <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
@@ -30,22 +30,182 @@
         </nav>
       </div>
     </header>
+
     <main id="main-content">
-      <section class="detail-hero fade-in-up">
-        <div class="container">
-          <a href="index.html#home" class="detail-back">← Back to home</a>
-          <p class="block-eyebrow">Sensing Platform</p>
-          <h1 class="detail-title">Multimodal Sensing Platform</h1>
-          <p class="detail-lead">Platform equipment, data acquisition capabilities, and experimental environments are to be updated.</p>
+      <section class="detail-hero platform-hero">
+        <div class="container platform-hero-grid">
+          <div>
+            <a href="index.html#home" class="detail-back">← Back to home</a>
+            <p class="block-eyebrow">Sensing Platform</p>
+            <h1 class="detail-title">Multimodal Sensing Platform</h1>
+            <p class="detail-lead">The platform integrates WiFi CSI and BFI.<br>It also covers mmWave radar and robotics.<br>It supports vital sensing,<br>activity recognition, and sensor fusion.</p>
+          </div>
+          <figure class="platform-hero-media platform-abstract-media" aria-hidden="true">
+            <svg viewBox="0 0 520 390" role="img" aria-label="Abstract multimodal sensing platform icon">
+              <path class="platform-abstract-orbit" d="M86 254 C164 94 354 88 438 230" />
+              <path class="platform-abstract-orbit" d="M118 304 C206 204 320 196 420 276" />
+              <circle class="platform-abstract-node" cx="142" cy="246" r="46" />
+              <circle class="platform-abstract-node" cx="274" cy="156" r="64" />
+              <circle class="platform-abstract-node" cx="400" cy="246" r="48" />
+              <path class="platform-abstract-link" d="M184 226 L224 186 M326 186 L362 226 M188 260 L356 260" />
+              <path class="platform-abstract-wave" d="M238 286 C254 268 286 268 302 286 M218 316 C246 286 294 286 322 316" />
+              <circle class="platform-abstract-core" cx="274" cy="244" r="14" />
+            </svg>
+          </figure>
         </div>
       </section>
+
       <section class="section fade-in-up">
-        <div class="container"><div class="section-heading"><p class="section-number">Overview</p><h2>Platform Overview</h2></div><div class="placeholder-block"><p class="placeholder-text">Platform introduction to be updated</p></div></div>
+        <div class="container">
+          <div class="section-heading section-heading-wide">
+            <div>
+              <p class="section-number">Platform Matrix</p>
+              <h2>Platform Components</h2>
+            </div>
+            <p>Four complementary systems cover protocol-level wireless sensing, commercial WiFi feedback, 3D point-cloud sensing, and mobile-scene validation.</p>
+          </div>
+          <div class="platform-matrix">
+            <article class="platform-summary-card">
+              <img src="../assets/images/platform/wifi-csi-intel5300.png" alt="Intel 5300 WiFi CSI acquisition hardware and antenna connectors" width="1274" height="638">
+              <div>
+                <span>01</span>
+                <h3>WiFi CSI Acquisition</h3>
+                <p>The Intel 5300 platform captures subcarrier-level amplitude and phase, enabling fine-grained analysis of channel changes caused by human motion.</p>
+              </div>
+            </article>
+            <article class="platform-summary-card">
+              <img src="../assets/images/platform/bfi-capture-r7800-r9000.jpeg" alt="BFI acquisition setup with Netgear routers, sniffer, and receiver laptop" width="3301" height="2476">
+              <div>
+                <span>02</span>
+                <h3>BFI Acquisition Platform</h3>
+                <p>A transmitter, a receiving node, and a sniffer work together to capture BFI packets generated during commercial WiFi communication.</p>
+              </div>
+            </article>
+            <article class="platform-summary-card">
+              <img src="../assets/images/platform/mmwave-awr1843.png" alt="TI AWR1843 millimeter-wave radar device" width="1108" height="1362">
+              <div>
+                <span>03</span>
+                <h3>Millimeter-Wave Radar</h3>
+                <p>The TI AWR1843 77GHz radar outputs 3D point clouds for chest micro-motion, posture, gait, and other spatial sensing tasks.</p>
+              </div>
+            </article>
+            <article class="platform-summary-card">
+              <img src="../assets/images/platform/turtlebot4-platform.jpeg" alt="TurtleBot4 mobile robot platform label" width="435" height="580">
+              <div>
+                <span>04</span>
+                <h3>TurtleBot4 Mobile Platform</h3>
+                <p>The mobile robot integrates sensing devices such as LiDAR and depth cameras to validate multisensor fusion in dynamic environments.</p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
+
       <section class="section section-tinted fade-in-up">
-        <div class="container"><div class="section-heading"><p class="section-number">Equipment</p><h2>Equipment and Environment</h2></div><div class="placeholder-block"><p class="placeholder-text">Equipment images, parameters, and environment descriptions to be updated</p></div></div>
+        <div class="container platform-feature">
+          <figure class="platform-feature-media">
+            <img src="../assets/images/platform/wifi-csi-intel5300.png" alt="Intel 5300 WiFi CSI platform" width="1274" height="638">
+          </figure>
+          <div class="platform-feature-copy">
+            <p class="section-number">WiFi CSI</p>
+            <h2>Fine-Grained Channel-State Acquisition</h2>
+            <p>Compared with RSS-based WiFi sensing, CSI records amplitude and phase across multiple subcarriers. It provides richer dimensions and stronger spatial resolution for describing channel variations caused by respiration, heartbeat, limb motion, and other human activities.</p>
+            <ul class="platform-list">
+              <li>Core hardware: Intel 5300 WiFi card with 802.11n MIMO and 3×3 multi-antenna transmission and reception.</li>
+              <li>Acquisition capability: three antennas provide multipath spatial information and improve sensitivity to weak chest micro-motion.</li>
+              <li>Data path: CSI data is written to SSD in real time, while RAM buffering supports long continuous acquisition sessions.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in-up">
+        <div class="container platform-feature platform-feature-reverse">
+          <figure class="platform-feature-media">
+            <img src="../assets/images/platform/bfi-capture-r7800-r9000.jpeg" alt="Routers, sniffer, and receiver laptop used for BFI acquisition" width="3301" height="2476">
+          </figure>
+          <div class="platform-feature-copy">
+            <p class="section-number">BFI</p>
+            <h2>Commercial WiFi Beamforming Feedback Capture</h2>
+            <p>BFI acquisition uses three device roles: a Netgear R7800 as the transmitter, a laptop as the receiving node, and a Netgear R9000 as the sniffer. The platform captures BFI packets exchanged between the router and terminal for sensing analysis.</p>
+            <ul class="platform-list">
+              <li>Principle: the AP sends sounding frames; the node estimates CSI, uses SVD to generate BFI, and feeds it back to the AP.</li>
+              <li>Protocol compatibility: beamforming is native to IEEE 802.11ac/ax, so modern WiFi devices can generate BFI during normal communication.</li>
+              <li>Low-cost sensing: BFI does not contain upper-layer payload data and can be collected with packet-capture tools.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container platform-gallery">
+          <figure>
+            <img src="../assets/images/platform/bfi-feedback-loop.png" alt="BFI feedback loop diagram" width="1344" height="392">
+            <figcaption>BFI loop: sounding, CSI estimation, SVD compression, feedback, and beam steering.</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/platform/bfi-respiration-setup.png" alt="Respiration monitoring acquisition setup" width="538" height="416">
+            <figcaption>AP, node, and sniffer placement for respiration monitoring.</figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/images/platform/bfi-gesture-setup.png" alt="Gesture recognition acquisition setup" width="620" height="472">
+            <figcaption>Multi-node BFI acquisition layout for gesture recognition.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-tinted fade-in-up">
+        <div class="container platform-feature">
+          <figure class="platform-feature-media platform-feature-media-portrait">
+            <img src="../assets/images/platform/mmwave-awr1843.png" alt="TI AWR1843 millimeter-wave radar acquisition device" width="1108" height="1362">
+          </figure>
+          <div class="platform-feature-copy">
+            <p class="section-number">Millimeter-Wave Radar</p>
+            <h2>3D Point-Cloud Spatial Sensing</h2>
+            <p>The TI AWR1843 radar works in the 77GHz band. By analyzing the time difference and phase change between transmitted and reflected millimeter-wave signals, it estimates target range, velocity, and angle, and outputs 3D point-cloud sequences of human targets.</p>
+            <ul class="platform-list">
+              <li>Sensitive to millimeter-scale displacement such as chest micro-motion.</li>
+              <li>Directly provides target position, motion direction, and posture-related spatial information.</li>
+              <li>Stable data quality independent of WiFi protocol, WiFi card model, illumination, smoke, and dust conditions.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in-up">
+        <div class="container platform-feature platform-feature-reverse">
+          <figure class="platform-feature-media platform-feature-media-portrait">
+            <img src="../assets/images/platform/turtlebot4-platform.jpeg" alt="TurtleBot4 mobile robot platform photo" width="435" height="580">
+          </figure>
+          <div class="platform-feature-copy">
+            <p class="section-number">Mobile Platform</p>
+            <h2>TurtleBot4 Dynamic Validation System</h2>
+            <p>TurtleBot4 is based on the iRobot Create3 chassis. It provides wheeled motion, anti-collision, anti-drop, anti-slip sensing, auto-docking, in-place rotation, and remote movement. The top platform leaves room for sensors and exposes USB and power interfaces.</p>
+            <ul class="platform-list">
+              <li>Supports LiDAR-based indoor mapping and autonomous navigation validation.</li>
+              <li>Supports depth-camera-based human detection, posture recognition, and visual sensing tasks.</li>
+              <li>Combines WiFi sensing, millimeter-wave radar, and vision to validate multisensor fusion in dynamic scenes.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tinted fade-in-up">
+        <div class="container">
+          <div class="section-heading section-heading-wide">
+            <div>
+              <p class="section-number">Applications</p>
+              <h2>Supported Research Scenarios</h2>
+            </div>
+            <p>The platform supports both low-level channel analysis and application-oriented sensing of people, environments, and mobile systems.</p>
+          </div>
+          <div class="platform-use-grid">
+            <div><span>01</span><h3>Physiological Sensing</h3><p>Respiration monitoring, heart-rate/heartbeat monitoring, and chest micro-motion analysis.</p></div>
+            <div><span>02</span><h3>Activity Recognition</h3><p>Gesture recognition and daily activity recognition, including walking, sitting, standing, and falling.</p></div>
+            <div><span>03</span><h3>People and Environment Sensing</h3><p>Presence detection, indoor occupancy counting, passive localization, and LOS/NLOS channel-state recognition.</p></div>
+            <div><span>04</span><h3>Mobile Fusion Validation</h3><p>Joint validation of WiFi, millimeter-wave, and visual sensing on the mobile robot platform.</p></div>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer class="site-footer"><div class="container footer-inner"><p><strong>Multimodal Intelligent Communication and Sensing</strong><br>NJUPT · School of Computer Science</p><p>© <span id="current-year">2026</span> Multimodal Intelligent Communication and Sensing</p></div></footer>
   </body>
 </html>

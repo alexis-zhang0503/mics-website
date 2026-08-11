@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="南京邮电大学计算机学院多模态智能通信与感知 - 多模态感知平台详情页。">
+    <meta name="description" content="南京邮电大学计算机学院多模态智能通信与感知 - 多模态感知平台详情页，介绍 WiFi CSI、BFI、毫米波雷达与移动机器人平台。">
     <meta name="theme-color" content="#173f67">
 
-    <title>多模态的感知平台 | 多模态智能通信与感知</title>
+    <title>多模态感知平台 | 多模态智能通信与感知</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
@@ -16,7 +16,7 @@
 
     <header class="site-header" id="top">
       <div class="header-inner container">
-        <a class="site-brand" href="index.html" aria-label="多模态智能通信与感知首页">
+        <a class="site-brand" href="index.html?lang=cn" aria-label="多模态智能通信与感知首页">
           <span class="brand-mark" aria-hidden="true">MICS</span>
           <span class="brand-text">
             <strong>多模态智能通信与感知</strong>
@@ -35,49 +35,189 @@
         </button>
 
         <nav class="primary-nav" id="primary-navigation" aria-label="主要导航">
-          <a href="index.html#about">课题组介绍</a>
-          <a href="index.html#leader">导师介绍</a>
-          <a href="index.html#research">研究方向</a>
-          <a href="index.html#team">团队成员</a>
-          <a href="index.html#publications">学术成果</a>
-          <a href="index.html#join">本科生招新</a>
-          <a href="index.html#partners">合作单位</a>
-          <a href="index.html#contact">联系方式</a>
+          <a href="index.html?lang=cn#about">课题组介绍</a>
+          <a href="index.html?lang=cn#leader">导师介绍</a>
+          <a href="index.html?lang=cn#research">研究方向</a>
+          <a href="index.html?lang=cn#team">团队成员</a>
+          <a href="index.html?lang=cn#publications">学术成果</a>
+          <a href="index.html?lang=cn#join">本科生招新</a>
+          <a href="index.html?lang=cn#partners">合作单位</a>
+          <a href="index.html?lang=cn#contact">联系方式</a>
           <span class="language-switch" aria-label="语言切换"><a href="en/platform.html" lang="en">EN</a><span aria-current="true">CN</span></span>
         </nav>
       </div>
     </header>
 
     <main id="main-content">
-      <section class="detail-hero fade-in-up">
-        <div class="container">
-          <a href="index.html#home" class="detail-back">← 返回首页</a>
-          <p class="block-eyebrow">Sensing Platform</p>
-          <h1 class="detail-title">多模态的感知平台</h1>
-          <p class="detail-lead">平台设备、数据采集能力与实验环境待补充。</p>
+      <section class="detail-hero platform-hero">
+        <div class="container platform-hero-grid">
+          <div>
+            <a href="index.html?lang=cn#home" class="detail-back">← 返回首页</a>
+            <p class="block-eyebrow">Sensing Platform</p>
+            <h1 class="detail-title">多模态感知平台</h1>
+            <p class="detail-lead">平台围绕 WiFi CSI、BFI 波束成形反馈信息、毫米波雷达与移动机器人系统，支撑从生理状态、动作行为到动态多传感器融合的实验验证。</p>
+          </div>
+          <figure class="platform-hero-media platform-abstract-media" aria-hidden="true">
+            <svg viewBox="0 0 520 390" role="img" aria-label="多模态感知平台抽象图标">
+              <path class="platform-abstract-orbit" d="M86 254 C164 94 354 88 438 230" />
+              <path class="platform-abstract-orbit" d="M118 304 C206 204 320 196 420 276" />
+              <circle class="platform-abstract-node" cx="142" cy="246" r="46" />
+              <circle class="platform-abstract-node" cx="274" cy="156" r="64" />
+              <circle class="platform-abstract-node" cx="400" cy="246" r="48" />
+              <path class="platform-abstract-link" d="M184 226 L224 186 M326 186 L362 226 M188 260 L356 260" />
+              <path class="platform-abstract-wave" d="M238 286 C254 268 286 268 302 286 M218 316 C246 286 294 286 322 316" />
+              <circle class="platform-abstract-core" cx="274" cy="244" r="14" />
+            </svg>
+          </figure>
         </div>
       </section>
 
       <section class="section fade-in-up">
         <div class="container">
-          <div class="section-heading">
-            <p class="section-number">Overview</p>
-            <h2>平台概览</h2>
+          <div class="section-heading section-heading-wide">
+            <div>
+              <p class="section-number">Platform Matrix</p>
+              <h2>平台构成</h2>
+            </div>
+            <p>四类平台覆盖协议级无线感知、商用 WiFi 反馈信息、三维空间点云和移动场景验证，形成从信道微扰到空间运动的多模态实验链路。</p>
           </div>
-          <div class="placeholder-block">
-            <p class="placeholder-text">平台介绍内容待补充</p>
+          <div class="platform-matrix">
+            <article class="platform-summary-card">
+              <img src="assets/images/platform/wifi-csi-intel5300.png" alt="Intel 5300 WiFi CSI 采集设备与天线接口" width="1274" height="638">
+              <div>
+                <span>01</span>
+                <h3>WiFi CSI 采集平台</h3>
+                <p>基于 Intel 5300 WiFi 网卡获取多子载波幅度与相位信息，适合分析人体活动引起的细粒度信道变化。</p>
+              </div>
+            </article>
+            <article class="platform-summary-card">
+              <img src="assets/images/platform/bfi-capture-r7800-r9000.jpeg" alt="BFI 采集平台现场设备，包括 Netgear 路由器、嗅探设备和接收电脑" width="3301" height="2476">
+              <div>
+                <span>02</span>
+                <h3>BFI 采集平台</h3>
+                <p>由发射设备、接收节点与嗅探设备协同，捕获商用 WiFi 通信过程中产生的 BFI 数据包。</p>
+              </div>
+            </article>
+            <article class="platform-summary-card">
+              <img src="assets/images/platform/mmwave-awr1843.png" alt="TI AWR1843 毫米波雷达设备近景" width="1108" height="1362">
+              <div>
+                <span>03</span>
+                <h3>毫米波雷达平台</h3>
+                <p>基于 TI AWR1843 77GHz 雷达输出三维点云，为胸腔微动、姿态和步态感知提供高质量原始数据。</p>
+              </div>
+            </article>
+            <article class="platform-summary-card">
+              <img src="assets/images/platform/turtlebot4-platform.jpeg" alt="TurtleBot4 移动机器人平台顶部标识照片" width="435" height="580">
+              <div>
+                <span>04</span>
+                <h3>TurtleBot4 移动平台</h3>
+                <p>作为移动验证平台，支持搭载激光雷达、深度相机等传感器，在动态场景下验证多传感器融合算法。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tinted fade-in-up">
+        <div class="container platform-feature">
+          <figure class="platform-feature-media">
+            <img src="assets/images/platform/wifi-csi-intel5300.png" alt="Intel 5300 WiFi CSI 采集设备结构图" width="1274" height="638">
+          </figure>
+          <div class="platform-feature-copy">
+            <p class="section-number">WiFi CSI</p>
+            <h2>细粒度信道状态采集</h2>
+            <p>相比只使用接收信号强度 RSS 的传统 WiFi 感知，CSI 可同时获取多个子载波的幅度和相位，信息维度更高、空间分辨率更强，能够刻画人体呼吸、心跳、肢体运动等引起的信道变化。</p>
+            <ul class="platform-list">
+              <li>核心设备：Intel 5300 WiFi 网卡，支持 802.11n MIMO 协议与 3×3 多天线收发。</li>
+              <li>采集能力：配合三根天线获取多空间路径信息，对胸腔微动等弱振动更敏感。</li>
+              <li>数据链路：CSI 数据实时写入 SSD，RAM 缓存用于驱动层缓冲，支持数小时级连续采集。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in-up">
+        <div class="container platform-feature platform-feature-reverse">
+          <figure class="platform-feature-media">
+            <img src="assets/images/platform/bfi-capture-r7800-r9000.jpeg" alt="BFI 采集实验中的路由器、嗅探设备和接收电脑" width="3301" height="2476">
+          </figure>
+          <div class="platform-feature-copy">
+            <p class="section-number">BFI</p>
+            <h2>商用 WiFi 波束成形反馈采集</h2>
+            <p>BFI 采集由三类设备协同完成：Netgear R7800 作为发射设备，家用电脑作为接收节点，Netgear R9000 作为嗅探设备。平台捕获路由器与终端之间交互的 BFI 数据包，供后续感知分析使用。</p>
+            <ul class="platform-list">
+              <li>采集原理：AP 发送信道探测帧，节点估计 CSI 矩阵并通过 SVD 生成 BFI，再反馈给 AP。</li>
+              <li>协议兼容：波束成形是 IEEE 802.11ac/ax 的原生功能，新一代商用 WiFi 设备会在正常通信中产生 BFI。</li>
+              <li>低成本采集：BFI 不涉及上层业务数据，可通过抓包工具采集，对现有通信干扰低。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container platform-gallery">
+          <figure>
+            <img src="assets/images/platform/bfi-feedback-loop.png" alt="BFI 闭环流程示意图" width="1344" height="392">
+            <figcaption>BFI 闭环流程：探测、CSI 估计、SVD 压缩、反馈与波束调整。</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/platform/bfi-respiration-setup.png" alt="呼吸监测信息采集示意图" width="538" height="416">
+            <figcaption>呼吸监测场景中的 AP、节点与嗅探器布置。</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/platform/bfi-gesture-setup.png" alt="手势识别信息采集示意图" width="620" height="472">
+            <figcaption>手势识别场景中的多节点 BFI 采集布置。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-tinted fade-in-up">
+        <div class="container platform-feature">
+          <figure class="platform-feature-media platform-feature-media-portrait">
+            <img src="assets/images/platform/mmwave-awr1843.png" alt="TI AWR1843 毫米波雷达采集设备" width="1108" height="1362">
+          </figure>
+          <div class="platform-feature-copy">
+            <p class="section-number">Millimeter-Wave Radar</p>
+            <h2>三维点云空间感知</h2>
+            <p>TI AWR1843 毫米波雷达工作在 77GHz 频段，可通过发射与接收毫米波信号的时间差和相位变化，反推出目标距离、速度和角度信息，并输出人体目标的三维点云序列。</p>
+            <ul class="platform-list">
+              <li>对胸腔微动等毫米级位移敏感，适合生理微动、姿态和步态相关任务。</li>
+              <li>直接输出目标位置、运动方向和姿态变化，空间信息更直观。</li>
+              <li>数据质量稳定，不依赖 WiFi 协议或网卡型号，不受光照、烟尘等环境条件干扰。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fade-in-up">
+        <div class="container platform-feature platform-feature-reverse">
+          <figure class="platform-feature-media platform-feature-media-portrait">
+            <img src="assets/images/platform/turtlebot4-platform.jpeg" alt="TurtleBot4 移动机器人平台照片" width="435" height="580">
+          </figure>
+          <div class="platform-feature-copy">
+            <p class="section-number">Mobile Platform</p>
+            <h2>TurtleBot4 动态验证系统</h2>
+            <p>TurtleBot4 基于 iRobot Create3 底盘，具备轮式驱动、防碰撞、防跌落、防打滑传感器，支持自动回充、原地转向和遥控移动。平台顶部预留空间与 USB、电源接口，可搭载激光雷达、深度相机等传感器。</p>
+            <ul class="platform-list">
+              <li>搭载激光雷达进行室内地图构建与自主导航算法验证。</li>
+              <li>搭载深度相机进行人体目标检测、姿态识别等视觉任务。</li>
+              <li>作为移动感知平台，整合 WiFi 感知、毫米波雷达和视觉识别，在动态场景下验证多传感器融合算法。</li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="section section-tinted fade-in-up">
         <div class="container">
-          <div class="section-heading">
-            <p class="section-number">Equipment</p>
-            <h2>设备与环境</h2>
+          <div class="section-heading section-heading-wide">
+            <div>
+              <p class="section-number">Applications</p>
+              <h2>支撑的研究场景</h2>
+            </div>
+            <p>平台既能支撑基础信道分析，也能覆盖面向人体、环境和移动载体的多模态感知任务。</p>
           </div>
-          <div class="placeholder-block">
-            <p class="placeholder-text">设备图片、参数与实验环境说明待补充</p>
+          <div class="platform-use-grid">
+            <div><span>01</span><h3>生理状态感知</h3><p>呼吸监测、心率/心跳监测，以及胸腔微动相关信号分析。</p></div>
+            <div><span>02</span><h3>动作行为感知</h3><p>手势识别、日常活动识别，以及走、坐、站、跌倒等行为状态判断。</p></div>
+            <div><span>03</span><h3>人员与环境感知</h3><p>人员存在检测、室内人数统计、被动定位和视距/非视距信道状态识别。</p></div>
+            <div><span>04</span><h3>移动融合验证</h3><p>在机器人平台上联合 WiFi、毫米波和视觉传感器，验证动态场景下的多源融合算法。</p></div>
           </div>
         </div>
       </section>
