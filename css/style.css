@@ -222,6 +222,35 @@ select {
   transition: color 160ms ease;
 }
 
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: var(--header-height);
+}
+
+.primary-nav .language-switch a,
+.primary-nav .language-switch span {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.primary-nav .language-switch a {
+  color: var(--primary);
+}
+
+.language-switch a::after {
+  display: none;
+}
+
+.language-switch span[aria-current="true"] {
+  color: var(--text-muted);
+}
+
 .primary-nav a::after {
   position: absolute;
   right: 0;
@@ -1576,6 +1605,17 @@ select {
     border-bottom: 1px solid var(--border);
     font-size: 15px;
     line-height: 50px;
+  }
+
+  .js .primary-nav .language-switch {
+    padding: 14px 12px 6px;
+    line-height: 1.4;
+  }
+
+  .js .primary-nav .language-switch a {
+    padding: 0;
+    border-bottom: 0;
+    line-height: 1;
   }
 
   .js .primary-nav a::after {
