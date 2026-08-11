@@ -14,6 +14,7 @@
 
     <title>物联网感知小组 | 南京邮电大学计算机学院</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
   </head>
@@ -39,10 +40,12 @@
 
         <nav class="primary-nav" id="primary-navigation" aria-label="主要导航">
           <a href="#about">课题组介绍</a>
-          <a href="#leader">负责人</a>
+          <a href="#leader">导师介绍</a>
           <a href="#research">研究方向</a>
+          <a href="#team">团队成员</a>
           <a href="#publications">学术成果</a>
           <a href="#join">本科生招新</a>
+          <a href="#partners">合作单位</a>
           <a href="#contact">联系方式</a>
         </nav>
       </div>
@@ -50,54 +53,113 @@
 
     <main id="main-content">
       <section class="hero" id="home" aria-labelledby="hero-title">
-        <div class="hero-inner container">
-          <div class="hero-content">
-            <p class="eyebrow">Nanjing University of Posts and Telecommunications</p>
-            <h1 id="hero-title">物联网感知小组</h1>
-            <p class="hero-affiliation">南京邮电大学 · 计算机学院</p>
-            <p class="hero-leader">负责人：<strong>左益平</strong></p>
-            <p class="hero-intro"><span class="placeholder-label">课题组简介</span> 待补充</p>
-            <div class="hero-actions" aria-label="首页快捷入口">
-              <a class="button button-primary" href="#research">研究方向</a>
-              <a class="button button-secondary" href="#join">本科生招新</a>
+        <canvas class="hero-canvas" id="hero-network" aria-hidden="true"></canvas>
+        
+        <div class="hero-slider">
+          <div class="hero-slide hero-slide-active">
+            <div class="hero-inner container">
+              <div class="hero-content">
+                <p class="eyebrow">Nanjing University of Posts and Telecommunications</p>
+                <h1 id="hero-title">物联网感知小组</h1>
+                <p class="hero-tagline">多模态感知与智能物联创新研究</p>
+                <div class="hero-actions">
+                  <a class="button button-primary" href="#about">了解课题组</a>
+                  <a class="button button-secondary" href="#research">研究方向</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <aside class="hero-index" aria-label="网站内容概览">
-            <p class="hero-index-title">Research Group</p>
-            <ol>
-              <li><span>01</span> Research</li>
-              <li><span>02</span> Publications</li>
-              <li><span>03</span> Opportunities</li>
-            </ol>
-          </aside>
+          <div class="hero-slide hero-slide-platform">
+            <div class="hero-inner container">
+              <div class="hero-content">
+                <p class="eyebrow">Research Infrastructure</p>
+                <h1>提供完备的科研平台</h1>
+                <p class="hero-tagline">具备前沿的科研设备，支撑多模态感知与智能物联创新研究</p>
+                <div class="hero-actions">
+                  <a class="button button-primary" href="#research">查看详情</a>
+                </div>
+              </div>
+            </div>
+            <div class="hero-platform-placeholder">
+              <svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="800" height="600" fill="#eef2f5"/>
+                <circle cx="400" cy="300" r="80" stroke="#9caab6" stroke-width="2" fill="none"/>
+                <path d="M340 300 L360 320 L400 280 L460 340" stroke="#9caab6" stroke-width="2" fill="none"/>
+                <text x="400" y="420" fill="#596674" font-size="18" text-anchor="middle" font-family="Arial, sans-serif">感知设备图片 · 待补充</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="hero-slide">
+            <div class="hero-inner container">
+              <div class="hero-content">
+                <p class="eyebrow">Join Our Team</p>
+                <h1>诚邀学生加入</h1>
+                <p class="hero-tagline">加入我们，探索物联网感知前沿，共筑科研梦想</p>
+                <div class="hero-actions">
+                  <a class="button button-primary" href="#join">查看招新信息</a>
+                  <a class="button button-secondary" href="#contact">联系我们</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="hero-nav hero-nav-prev" aria-label="上一张幻灯片">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M20 8 L12 16 L20 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="hero-nav hero-nav-next" aria-label="下一张幻灯片">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M12 8 L20 16 L12 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="hero-indicators">
+          <button class="hero-indicator hero-indicator-active" aria-label="幻灯片 1"></button>
+          <button class="hero-indicator" aria-label="幻灯片 2"></button>
+          <button class="hero-indicator" aria-label="幻灯片 3"></button>
         </div>
       </section>
 
-      <section class="section" id="about" aria-labelledby="about-title">
-        <div class="container section-grid">
-          <div class="section-heading">
-            <p class="section-number">01 / About</p>
-            <h2 id="about-title">课题组介绍</h2>
+      <section class="block-panel block-panel-dark fade-in-up" id="about" aria-labelledby="about-title">
+        <div class="block-panel-inner container">
+          <div class="block-panel-text">
+            <p class="block-eyebrow">01 / About the Group</p>
+            <h2 id="about-title" class="block-title">课题组<br>介绍</h2>
+            <p class="block-lead">待补充</p>
+            <p class="block-note">课题组的正式介绍将在内容确认后更新。</p>
           </div>
-          <div class="section-content prose-block">
-            <p class="lead">待补充</p>
-            <p class="content-note">课题组的正式介绍将在内容确认后更新。</p>
+          <div class="block-panel-visual" aria-hidden="true">
+            <svg viewBox="0 0 400 400" fill="none">
+              <circle cx="200" cy="200" r="160" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+              <circle cx="200" cy="200" r="110" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+              <circle cx="200" cy="80" r="6" fill="#2563eb"/>
+              <circle cx="320" cy="200" r="6" fill="#06b6d4"/>
+              <circle cx="200" cy="320" r="6" fill="#8b5cf6"/>
+              <circle cx="80" cy="200" r="6" fill="#2563eb"/>
+              <line x1="200" y1="80" x2="320" y2="200" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <line x1="320" y1="200" x2="200" y2="320" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <line x1="200" y1="320" x2="80" y2="200" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+              <line x1="80" y1="200" x2="200" y2="80" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+            </svg>
           </div>
         </div>
       </section>
 
-      <section class="section section-tinted" id="leader" aria-labelledby="leader-title">
-        <div class="container section-grid">
-          <div class="section-heading">
-            <p class="section-number">02 / Principal Investigator</p>
-            <h2 id="leader-title">负责人介绍</h2>
-          </div>
-          <article class="profile">
+      <section class="block-panel fade-in-up" id="leader" aria-labelledby="leader-title">
+        <div class="block-panel-inner block-panel-reverse container">
+          <div class="block-panel-visual">
             <div class="profile-photo">
               <img src="assets/images/teacher-placeholder.svg" alt="左益平老师照片占位图，照片待补充" width="420" height="520">
             </div>
-            <div class="profile-details">
+          </div>
+          <div class="block-panel-text">
+            <p class="block-eyebrow">02 / Principal Investigator</p>
+            <h2 id="leader-title" class="block-title">负责人<br>介绍</h2>
+            <article class="profile-details">
               <header class="profile-header">
                 <div>
                   <h3>左益平</h3>
@@ -128,48 +190,136 @@
                   <dd>待补充</dd>
                 </div>
               </dl>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="research" aria-labelledby="research-title">
+      <section class="block-panel block-panel-dark fade-in-up" id="research" aria-labelledby="research-title">
         <div class="container">
-          <div class="section-heading section-heading-wide">
-            <div>
-              <p class="section-number">03 / Research</p>
-              <h2 id="research-title">研究方向</h2>
-            </div>
-            <p>以下方向为预留结构，具体内容待后续确认。</p>
-          </div>
+          <header class="block-section-header">
+            <p class="block-eyebrow">03 / Research Directions</p>
+            <h2 id="research-title" class="block-title">研究方向</h2>
+            <p class="block-desc">点击卡片了解各方向的详细研究内容、团队成员与学术成果。</p>
+          </header>
 
-          <div class="research-list">
-            <article class="research-item">
-              <p class="item-index">Research Direction 01</p>
-              <h3>待补充</h3>
-              <p class="item-description">待补充</p>
-              <p class="keywords"><span>关键词</span> 待补充</p>
-            </article>
-            <article class="research-item">
-              <p class="item-index">Research Direction 02</p>
-              <h3>待补充</h3>
-              <p class="item-description">待补充</p>
-              <p class="keywords"><span>关键词</span> 待补充</p>
-            </article>
-            <article class="research-item">
-              <p class="item-index">Research Direction 03</p>
-              <h3>待补充</h3>
-              <p class="item-description">待补充</p>
-              <p class="keywords"><span>关键词</span> 待补充</p>
-            </article>
+          <div class="research-grid">
+            <a href="research-multimodal.html" class="research-card">
+              <div class="research-card-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <rect x="12" y="12" width="24" height="24" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                  <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+                  <circle cx="36" cy="20" r="2.5" fill="currentColor"/>
+                  <path d="M18 32 Q28 36 38 32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="research-card-number">01</span>
+              <h3>多模态感知</h3>
+              <p class="research-card-lead">主要负责人：<strong>张栩闻</strong></p>
+              <p class="research-card-contact">Email: 待补充</p>
+              <span class="research-card-link">了解更多 →</span>
+            </a>
+            <a href="research-ai.html" class="research-card">
+              <div class="research-card-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M18 24 L22 28 L30 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="24" cy="12" r="2" fill="currentColor"/>
+                  <circle cx="12" cy="24" r="2" fill="currentColor"/>
+                  <circle cx="36" cy="24" r="2" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="research-card-number">02</span>
+              <h3>人工智能</h3>
+              <p class="research-card-lead">主要负责人：<strong>陆梓健</strong></p>
+              <p class="research-card-contact">Email: 待补充</p>
+              <span class="research-card-link">了解更多 →</span>
+            </a>
+            <a href="research-communication.html" class="research-card">
+              <div class="research-card-icon">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <path d="M8 24 Q16 16 24 24 Q32 32 40 24" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                  <path d="M8 24 Q16 32 24 24 Q32 16 40 24" stroke="currentColor" stroke-width="2.5" fill="none" opacity="0.6"/>
+                  <circle cx="8" cy="24" r="2.5" fill="currentColor"/>
+                  <circle cx="40" cy="24" r="2.5" fill="currentColor"/>
+                  <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="research-card-number">03</span>
+              <h3>通信技术</h3>
+              <p class="research-card-lead">主要负责人：<strong>金楚惟</strong></p>
+              <p class="research-card-contact">Email: 待补充</p>
+              <span class="research-card-link">了解更多 →</span>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="section section-tinted" id="publications" aria-labelledby="publications-title">
+      <section class="section fade-in-up" id="team" aria-labelledby="team-title">
+        <div class="container">
+          <div class="section-heading section-heading-centered">
+            <p class="section-number">04 / Team Members</p>
+            <h2 id="team-title">团队成员</h2>
+            <p>以下为课题组学生成员，成员信息待后续补充。</p>
+          </div>
+
+          <div class="team-members">
+            <div class="team-member">
+              <div class="team-member-avatar">
+                <img src="assets/images/member-placeholder.svg" alt="成员头像占位" width="120" height="120">
+              </div>
+              <h4>待补充</h4>
+              <p class="team-member-role">研究生</p>
+              <p class="team-member-bio">研究兴趣：待补充</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-avatar">
+                <img src="assets/images/member-placeholder.svg" alt="成员头像占位" width="120" height="120">
+              </div>
+              <h4>待补充</h4>
+              <p class="team-member-role">研究生</p>
+              <p class="team-member-bio">研究兴趣：待补充</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-avatar">
+                <img src="assets/images/member-placeholder.svg" alt="成员头像占位" width="120" height="120">
+              </div>
+              <h4>待补充</h4>
+              <p class="team-member-role">本科生</p>
+              <p class="team-member-bio">研究兴趣：待补充</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-avatar">
+                <img src="assets/images/member-placeholder.svg" alt="成员头像占位" width="120" height="120">
+              </div>
+              <h4>待补充</h4>
+              <p class="team-member-role">本科生</p>
+              <p class="team-member-bio">研究兴趣：待补充</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-avatar">
+                <img src="assets/images/member-placeholder.svg" alt="成员头像占位" width="120" height="120">
+              </div>
+              <h4>待补充</h4>
+              <p class="team-member-role">本科生</p>
+              <p class="team-member-bio">研究兴趣：待补充</p>
+            </div>
+            <div class="team-member">
+              <div class="team-member-avatar">
+                <img src="assets/images/member-placeholder.svg" alt="成员头像占位" width="120" height="120">
+              </div>
+              <h4>待补充</h4>
+              <p class="team-member-role">本科生</p>
+              <p class="team-member-bio">研究兴趣：待补充</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tinted fade-in-up" id="publications" aria-labelledby="publications-title">
         <div class="container section-grid">
           <div class="section-heading">
-            <p class="section-number">04 / Publications</p>
+            <p class="section-number">05 / Publications</p>
             <h2 id="publications-title">Selected Publications</h2>
           </div>
           <div class="publication-list">
@@ -204,75 +354,59 @@
         </div>
       </section>
 
-      <section class="section join-section" id="join" aria-labelledby="join-title">
+      <section class="section join-section fade-in-up" id="join" aria-labelledby="join-title">
         <div class="container">
           <div class="join-intro section-grid">
             <div class="section-heading">
-              <p class="section-number">05 / Join Us</p>
+              <p class="section-number">06 / Join Us</p>
               <h2 id="join-title">本科生科研招新</h2>
             </div>
             <div class="section-content">
               <p class="lead">待补充</p>
-              <p class="content-note">科研题目与具体要求将在确认后公布。</p>
+              <p class="content-note">课题组常年招募对物联网感知技术感兴趣的本科生，具体研究题目与申请要求请查看详细招新页面。</p>
+              <a class="button button-primary" href="join.html" style="margin-top: 24px;">查看详细招新信息 →</a>
             </div>
           </div>
-
-          <div class="opportunity-list">
-            <article class="opportunity-item">
-              <header>
-                <p class="item-index">题目 01</p>
-                <span class="status status-pending">内容待公布</span>
-              </header>
-              <h3>待补充</h3>
-              <dl>
-                <div><dt>研究方向</dt><dd>待补充</dd></div>
-                <div><dt>题目简介</dt><dd>待补充</dd></div>
-                <div><dt>主要工作</dt><dd>待补充</dd></div>
-                <div><dt>基础要求</dt><dd>待补充</dd></div>
-                <div><dt>指导教师</dt><dd>左益平</dd></div>
-                <div><dt>状态</dt><dd>内容待公布</dd></div>
-              </dl>
-            </article>
-            <article class="opportunity-item">
-              <header>
-                <p class="item-index">题目 02</p>
-                <span class="status status-pending">内容待公布</span>
-              </header>
-              <h3>待补充</h3>
-              <dl>
-                <div><dt>研究方向</dt><dd>待补充</dd></div>
-                <div><dt>题目简介</dt><dd>待补充</dd></div>
-                <div><dt>主要工作</dt><dd>待补充</dd></div>
-                <div><dt>基础要求</dt><dd>待补充</dd></div>
-                <div><dt>指导教师</dt><dd>左益平</dd></div>
-                <div><dt>状态</dt><dd>内容待公布</dd></div>
-              </dl>
-            </article>
-            <article class="opportunity-item">
-              <header>
-                <p class="item-index">题目 03</p>
-                <span class="status status-pending">内容待公布</span>
-              </header>
-              <h3>待补充</h3>
-              <dl>
-                <div><dt>研究方向</dt><dd>待补充</dd></div>
-                <div><dt>题目简介</dt><dd>待补充</dd></div>
-                <div><dt>主要工作</dt><dd>待补充</dd></div>
-                <div><dt>基础要求</dt><dd>待补充</dd></div>
-                <div><dt>指导教师</dt><dd>左益平</dd></div>
-                <div><dt>状态</dt><dd>内容待公布</dd></div>
-              </dl>
-            </article>
-          </div>
-
-          <p class="status-guide"><strong>状态说明：</strong>后续发布题目时，可将状态设置为“开放”或“暂停”。</p>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <section class="section section-tinted fade-in-up" id="partners" aria-labelledby="partners-title">
+        <div class="container">
+          <div class="section-heading section-heading-centered">
+            <p class="section-number">07 / Partners</p>
+            <h2 id="partners-title">合作单位</h2>
+            <p>课题组与以下单位保持科研合作关系</p>
+          </div>
+
+          <div class="partners-grid">
+            <div class="partner-card">
+              <div class="partner-logo-placeholder" aria-hidden="true">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <rect x="4" y="4" width="48" height="48" rx="8" stroke="currentColor" stroke-width="2"/>
+                  <path d="M16 36 L28 20 L40 36" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+              <h3>东南大学 FutureComm Lab</h3>
+              <p class="partner-desc">待补充合作内容简介</p>
+            </div>
+            <div class="partner-card">
+              <div class="partner-logo-placeholder" aria-hidden="true">
+                <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                  <path d="M28 8 L48 18 V32 C48 42 39 48 28 50 C17 48 8 42 8 32 V18 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                  <path d="M20 28 L26 34 L38 22" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+              <h3>江苏省人民医院</h3>
+              <p class="partner-desc">待补充合作内容简介</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section fade-in-up" id="contact" aria-labelledby="contact-title">
         <div class="container section-grid">
           <div class="section-heading">
-            <p class="section-number">06 / Contact</p>
+            <p class="section-number">08 / Contact</p>
             <h2 id="contact-title">联系方式</h2>
           </div>
           <address class="contact-details">
