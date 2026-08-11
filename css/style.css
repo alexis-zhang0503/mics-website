@@ -598,6 +598,10 @@ html[lang="en"] .hero-slide-home .hero-content {
   max-width: min(100%, 1040px);
 }
 
+html[lang="en"] .hero-slide-results .hero-content {
+  max-width: min(100%, 980px);
+}
+
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .hero h1 {
     background: var(--gradient-primary);
@@ -1569,7 +1573,8 @@ html[lang="en"] .hero-slide-home .hero-content {
 
 @media (min-width: 821px) {
   .hero-slide-home h1,
-  .hero-slide-platform h1 {
+  .hero-slide-platform h1,
+  html[lang="en"] .hero-slide-results h1 {
     white-space: nowrap;
     overflow-wrap: normal;
   }
