@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="南京邮电大学计算机学院多模态智能通信与感知官方网站，展示课题组介绍、研究方向、学术成果与本科生科研招新信息。">
+    <meta name="description" content="南京邮电大学计算机学院多模态智能通信与感知官方网站，展示课题组介绍、研究方向、代表作与本科生招新信息。">
     <meta name="theme-color" content="#173f67">
 
     <meta property="og:type" content="website">
@@ -26,13 +26,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#main-content">跳转到主要内容</a>
 
     <header class="site-header" id="top">
       <div class="header-inner container">
         <a class="site-brand" href="#home" aria-label="多模态智能通信与感知首页">
-          <span class="brand-mark" aria-hidden="true"><img src="assets/images/mics-logo.png" alt=""></span>
+          <span class="brand-mark" aria-hidden="true"><img src="assets/images/mics-logo.png" alt="" width="64" height="64"></span>
           <span class="brand-text">
             <strong>多模态智能通信与感知</strong>
             <small>
@@ -54,7 +54,7 @@
           <a href="#leader">导师介绍</a>
           <a href="#research">研究方向</a>
           <a href="#team">团队成员</a>
-          <a href="#publications">学术成果</a>
+          <a href="#publications">代表作</a>
           <a href="#join">本科生招新</a>
           <a href="#partners">合作单位</a>
           <a href="#contact">联系方式</a>
@@ -74,6 +74,10 @@
                 <p class="eyebrow">Multimodal Intelligent Communication and Sensing</p>
                 <h1 id="hero-title">多模态智能通信与感知</h1>
                 <p class="hero-tagline">面向智能物联场景，开展多模态感知、通感一体化与智能通信研究</p>
+                <div class="hero-pills" aria-label="课题组重点">
+                  <span>多个研究方向</span>
+                  <span>多源感知平台</span>
+                </div>
                 <div class="hero-actions">
                   <a class="button button-primary" href="#about">了解课题组</a>
                   <a class="button button-secondary" href="#research">研究方向</a>
@@ -100,6 +104,11 @@
                 <p class="eyebrow">Research Infrastructure</p>
                 <h1>多模态的感知平台</h1>
                 <p class="hero-tagline">汇聚多源感知设备与实验环境，支撑通信、感知与智能算法协同研究</p>
+                <div class="hero-pills" aria-label="平台能力">
+                  <span>WiFi CSI / BFI</span>
+                  <span>毫米波雷达</span>
+                  <span>RIS智能超表面</span>
+                </div>
                 <div class="hero-actions">
                   <a class="button button-primary" href="platform.html">查看详情</a>
                 </div>
@@ -121,9 +130,12 @@
           <div class="hero-slide hero-slide-results">
             <div class="hero-inner container">
               <div class="hero-content">
-                <p class="eyebrow">Research Updates</p>
-                <h1>最新研究成果</h1>
-                <p class="hero-tagline">持续沉淀多模态智能通信与感知方向的阶段性科研进展</p>
+                <p class="eyebrow">Representative Works</p>
+                <h1>代表作</h1>
+                <p class="hero-tagline">集中展示多模态智能通信与感知方向的代表性论文成果</p>
+                <div class="hero-pills" aria-label="成果摘要">
+                  <span>代表作</span>
+                </div>
                 <div class="hero-actions">
                   <a class="button button-primary" href="https://scholar.google.co.jp/citations?user=N1wGoKkAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener noreferrer">查看详情</a>
                 </div>
@@ -148,6 +160,10 @@
                 <p class="eyebrow">Research Network</p>
                 <h1>多个合作伙伴</h1>
                 <p class="hero-tagline">与校内外科研与应用单位协同推进多模态智能通信与感知研究</p>
+                <div class="hero-pills" aria-label="合作方向">
+                  <span>FutureComm Lab</span>
+                  <span>江苏省人民医院</span>
+                </div>
                 <div class="hero-actions">
                   <a class="button button-primary" href="#partners">查看详情</a>
                 </div>
@@ -173,6 +189,11 @@
                 <p class="eyebrow">Join Our Team</p>
                 <h1>诚邀新同学加入</h1>
                 <p class="hero-tagline">加入我们，探索多模态智能通信与感知前沿，共筑科研梦想</p>
+                <div class="hero-pills" aria-label="招新方向">
+                  <span>科研指导</span>
+                  <span>工程教导</span>
+                  <span>自主实践</span>
+                </div>
                 <div class="hero-actions">
                   <a class="button button-primary" href="#join">查看招新信息</a>
                 </div>
@@ -208,6 +229,38 @@
           <button class="hero-indicator" aria-label="幻灯片 3"></button>
           <button class="hero-indicator" aria-label="幻灯片 4"></button>
           <button class="hero-indicator" aria-label="幻灯片 5"></button>
+        </div>
+      </section>
+
+      <section class="home-overview fade-in-up" aria-labelledby="overview-title">
+        <div class="container">
+          <header class="overview-header">
+            <p class="section-number">Overview</p>
+            <h2 id="overview-title">研究入口</h2>
+            <p>围绕多模态感知、通感一体化与智能通信组织平台、成果和团队信息。</p>
+          </header>
+          <div class="overview-grid">
+            <a class="overview-card overview-card-primary" href="#research">
+              <span>Research</span>
+              <strong>多个研究方向</strong>
+              <p>多模态感知、通感一体化、智能通信。</p>
+            </a>
+            <a class="overview-card" href="platform.html">
+              <span>Platform</span>
+              <strong>多源采集平台</strong>
+              <p>支撑 WiFi、毫米波雷达与 RIS 智能超表面实验。</p>
+            </a>
+            <a class="overview-card" href="#publications">
+              <span>Works</span>
+              <strong>代表作</strong>
+              <p>集中展示课题组代表性论文成果。</p>
+            </a>
+            <a class="overview-card" href="#team">
+              <span>Team</span>
+              <strong>导师与学生团队</strong>
+              <p>研究生、本科生共同参与科研训练。</p>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -283,7 +336,7 @@
           <header class="block-section-header">
             <p class="block-eyebrow">03 / Research Directions</p>
             <h2 id="research-title" class="block-title">研究方向</h2>
-            <p class="block-desc">点击卡片了解各方向的详细研究内容、团队成员与学术成果。</p>
+            <p class="block-desc">点击卡片了解各方向详情、团队成员与学术成果。</p>
           </header>
 
           <div class="research-grid">
@@ -457,7 +510,7 @@
           <div class="join-intro section-grid">
             <div class="section-heading">
               <p class="section-number">06 / Join Us</p>
-              <h2 id="join-title">本科生科研招新</h2>
+              <h2 id="join-title">本科生招新</h2>
             </div>
             <div class="section-content">
               <p class="lead">待补充</p>
