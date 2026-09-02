@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="南京邮电大学计算机学院多模态智能通信与感知 - 智能通信研究方向详情页。">
+    <meta name="description" content="南京邮电大学计算机学院多模态智能通信与感知课题组智能通信方向，研究智能信号处理、无线世界模型、网络智能体与具身边缘通信。">
     <meta name="theme-color" content="#173f67">
 
     <title>智能通信 | 多模态智能通信与感知</title>
@@ -58,61 +58,167 @@
         </div>
       </section>
 
-      <section class="section fade-in-up">
-        <div class="container">
-          <div class="placeholder-block">
-            <p class="placeholder-text">方向介绍内容待补充</p>
-          </div>
-        </div>
-      </section>
+      <article class="section news-article fade-in-up">
+        <div class="container news-container">
+          <header class="news-header">
+            <p class="news-kicker">研究方向</p>
+            <h2>从智能信号到可信行动的 AI 原生通信</h2>
+            <p>智能通信关注真实网络约束下的信号理解、动态状态建模、智能体决策、任务驱动通信与安全执行。我们以通信与信号处理为研究对象，以 AI、Agent 和世界模型为核心方法，探索网络如何从被动的信息传输系统发展为能够感知、预测、协同和行动的智能基础设施。</p>
+            <div class="news-summary" aria-label="方向重点">
+              <span>核心主线</span>
+              <p>一方面以 AI 理解、预测和自主控制通信系统（AI for Communication）；另一方面以通信支撑多智能体、具身系统和边缘智能（Communication for AI），并以证据可追踪、执行前验证、故障恢复和安全回退贯穿两条主线。</p>
+            </div>
+          </header>
 
-      <section class="section section-tinted fade-in-up">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-number">Systems</p>
-            <h2>通信系统 / 测试平台</h2>
-          </div>
-          <div class="placeholder-block">
-            <p class="placeholder-text">通信系统图片与说明待补充</p>
-          </div>
-        </div>
-      </section>
+          <section class="news-section">
+            <h3>研究背景</h3>
+            <p>面向 6G、智能物联、车联网和低空网络，通信系统正与环境感知、边缘计算和任务控制深度耦合。网络不再只负责传输比特，还需要理解信道与业务状态，在动态环境中协调计算、频谱、能量和行动资源。</p>
+            <p>传统方法通常依赖静态模型和单次优化，但真实网络中的信道、流量、拓扑、设备和任务持续变化，观测还可能过期、缺失或相互冲突。仅依据一次快照做出决策，难以稳定应对长期演化和突发扰动。</p>
+            <p>网络智能体可以连接业务意图、网络遥测、分析工具和配置接口，把诊断、规划、工具调用和资源控制组织为连续过程。但网络操作会影响真实用户和设备，因此每个结论都需要保留证据来源，每个动作都需要在执行前检查约束，并在失败后支持局部修复或安全恢复。</p>
+            <p>机器人、无人机、智能汽车和多智能体系统进一步改变了通信优化目标：系统不仅要追求吞吐量，还要在时延、带宽、能耗和可靠性限制下提高任务完成质量。这使通信系统既成为 AI 需要理解和控制的对象，也成为分布式智能与具身行动的关键基础设施。</p>
+          </section>
 
-      <section class="section fade-in-up">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-number">Team</p>
-            <h2>方向团队成员</h2>
-          </div>
-          <div class="placeholder-block">
-            <p class="placeholder-text">该方向团队成员信息待补充</p>
-          </div>
-        </div>
-      </section>
+          <section class="news-section">
+            <h3>研究方向</h3>
+            <p>围绕“信号—网络—系统”三层研究链，我们从可观测信号出发，构建动态网络状态与智能决策能力，再将通信、感知、计算和行动放入真实任务闭环中联合优化。</p>
+            <div class="focus-list">
+              <section class="focus-item">
+                <span>01</span>
+                <div>
+                  <h4>智能信号处理与多模态健康</h4>
+                  <p>研究对象包括无线信道、WiFi CSI/BFI、毫米波雷达、语音和生理时序信号，重点探索信号增强、时频建模、表征学习、多模态融合、跨设备与跨人群泛化，以及不确定性估计和端边协同处理。</p>
+                  <p>其中，语音是由麦克风采集的<strong>声学信号</strong>，并非无线信号。面向阿尔茨海默病（AD）的语音认知筛查可作为智能信号处理与多模态健康的在研应用，重点关注跨语料、跨语言、跨任务和跨采集协议的稳健泛化，不将其表述为已完成的临床部署。进一步研究可考察原始语音或任务特征在终端与边缘之间的传输、联邦学习和隐私保护，使其自然进入智能通信系统。</p>
+                </div>
+              </section>
+              <section class="focus-item">
+                <span>02</span>
+                <div>
+                  <h4>无线世界模型与网络智能体</h4>
+                  <p>研究如何从信道、流量、拓扑、用户移动、业务意图和网络遥测中构建带来源与不确定性的动态网络状态，预测环境演化和候选操作的影响，为网络分析、规划、工具调用、资源控制与故障恢复提供依据。</p>
+                  <p>无线世界模型是正在推进的研究议程：它需要在不完整、异步和受带宽限制的观测下持续更新，并通过反事实推演比较不同动作可能带来的性能与风险。网络智能体则负责把模型、工具与控制接口组织起来，在执行前验证约束，在异常发生时修复计划或安全回退。</p>
+                </div>
+              </section>
+              <section class="focus-item">
+                <span>03</span>
+                <div>
+                  <h4>具身与边缘智能通信</h4>
+                  <p>面向机器人、无人机、智能汽车和智能空间，研究通信、感知、计算与行动的协同机制，包括任务驱动的信息传输、多智能体状态与意图交换、端边云协同推理，以及网络中断或信息过期时的安全退化。</p>
+                  <p>该方向强调 Communication for AI：通信策略依据任务价值选择“传什么、何时传、传到哪里”，并联合优化时延、带宽、能耗、可靠性和任务成功率，使网络能力直接服务于具身系统和分布式智能的真实行动。</p>
+                </div>
+              </section>
+            </div>
+          </section>
 
-      <section class="section section-tinted fade-in-up">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-number">Publications</p>
-            <h2>方向学术成果</h2>
-          </div>
-          <div class="placeholder-block">
-            <p class="placeholder-text">该方向学术成果待补充</p>
-          </div>
-        </div>
-      </section>
+          <section class="news-section">
+            <h3>可信通信智能闭环</h3>
+            <p>三个研究层次由一条“感知—建模—预测—协同—验证与执行—反馈”的可信闭环连接。以下是面向未来研究的统一方法框架，而非对已有完整系统的成熟度声明。</p>
+            <div class="focus-list">
+              <section class="focus-item">
+                <span>01</span>
+                <div>
+                  <h4>感知</h4>
+                  <p>输入无线、声学、环境、设备和任务信号，经过同步、增强与质量评估，形成可追踪的观测证据。采样频率、链路时延和丢包会决定智能体看到的状态是否及时、完整。</p>
+                </div>
+              </section>
+              <section class="focus-item">
+                <span>02</span>
+                <div>
+                  <h4>建模</h4>
+                  <p>将多源观测融合为带时间戳、来源和不确定性的动态状态，显式标记缺失与冲突。通信预算限制了可汇聚的信息量，因此需要在状态精度、更新频率与开销之间权衡。</p>
+                </div>
+              </section>
+              <section class="focus-item">
+                <span>03</span>
+                <div>
+                  <h4>预测</h4>
+                  <p>基于当前状态和候选动作预测信道、业务、资源与任务结果的可能演化，输出后果和风险估计。预测必须考虑网络时延造成的状态陈旧，以及模型对未见场景的不确定性。</p>
+                </div>
+              </section>
+              <section class="focus-item">
+                <span>04</span>
+                <div>
+                  <h4>协同</h4>
+                  <p>Agent、边缘节点与具身设备交换完成任务所必需的状态、意图和证据，形成可执行的协同计划。带宽与能耗约束要求系统优先传递高价值信息，而不是无差别汇聚全部数据。</p>
+                </div>
+              </section>
+              <section class="focus-item">
+                <span>05</span>
+                <div>
+                  <h4>验证与执行</h4>
+                  <p>在调用工具或下发配置前检查资源、安全、依赖与业务约束，输出通过验证的动作及其依据。若证据不足或链路状态变化，则局部修复计划、请求补充观测，或转入安全回退。</p>
+                </div>
+              </section>
+              <section class="focus-item">
+                <span>06</span>
+                <div>
+                  <h4>反馈</h4>
+                  <p>采集执行后的网络指标、设备状态和任务结果，比较预测与真实结果，更新状态、模型与策略。反馈链路的延迟和可靠性决定系统能否及时发现偏差并关闭行动闭环。</p>
+                </div>
+              </section>
+            </div>
+          </section>
 
-      <section class="section fade-in-up">
-        <div class="container">
-          <div class="section-heading">
-            <p class="section-number">Opportunities</p>
-            <h2>招新题目</h2>
-          </div>
-          <div class="placeholder-block">
-            <p class="placeholder-text">该方向招新题目待发布</p>
-          </div>
+          <section class="news-section">
+            <h3>未来方向</h3>
+            <p>未来将围绕动态无线环境中的世界模型与数字孪生、可验证和可恢复的网络智能体、多智能体与具身系统的任务驱动通信、声学与无线多模态健康信号的端边协同处理，以及面向真实设备与网络约束的低时延部署持续推进研究。</p>
+            <p>我们希望把算法评估进一步放到真实链路、真实设备和连续任务中：不仅观察单次预测或优化结果，还考察状态是否可信、决策是否可执行、失败是否可恢复，以及通信开销是否与任务收益相匹配。</p>
+          </section>
+
+          <section class="news-section">
+            <h3>代表性工作</h3>
+            <div class="publication-list direction-publications">
+              <article class="publication-item">
+                <span class="publication-number">01</span>
+                <div>
+                  <h3>WirelessOpsAgent: A Benchmark and Agent Design for Action Assurance in Wireless Networks</h3>
+                  <p class="publication-authors">Authors：Z. Lu, Y. Zuo, H. Xu, W. Chen, X. He, J. Guo, S. Jin</p>
+                  <p class="publication-meta">Venue：arXiv preprint arXiv:2608.08277 <span aria-hidden="true">·</span> Year：2026</p>
+                  <p>该工作面向无线网络操作中的执行保障，研究智能体如何组织当前证据、检查动作约束，并在配置执行前发现和修复问题，为可验证、可恢复的网络自治提供直接支撑。</p>
+                  <p class="publication-link"><a href="https://arxiv.org/abs/2608.08277">查看论文</a></p>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span class="publication-number">02</span>
+                <div>
+                  <h3>Fluid Antenna-Aided ISAC for Urban Drone Delivery: System Design, Edge Realization, and Evaluation</h3>
+                  <p class="publication-authors">Authors：Z. Lu, Y. Zuo, Z. Shu, W. Chen, N. Gao, C. Dai, W. Fan</p>
+                  <p class="publication-meta">Venue：IEEE Internet of Things Magazine <span aria-hidden="true">·</span> Year：2026</p>
+                  <p>该工作面向城市无人机配送场景，研究流体天线辅助的通感一体化系统设计、边缘实现与评估，体现无线通信、环境感知、低空任务和边缘处理之间的系统协同。</p>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span class="publication-number">03</span>
+                <div>
+                  <h3>Secrecy Rate Maximization for Fluid Antenna-aided ISAC System with UAVs</h3>
+                  <p class="publication-authors">Authors：Z. Lu, Y. Zuo, X. He, L. Wang, W. Chen, C. Dai, W. Fan</p>
+                  <p class="publication-meta">Venue：2026 29th International Conference on Computer Supported Cooperative Work in Design (CSCWD) <span aria-hidden="true">·</span> Year：2026</p>
+                  <p>该工作研究无人机场景下流体天线辅助通感一体化系统的保密速率优化，为低空网络中的通信、感知与安全资源配置提供系统层支撑。</p>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span class="publication-number">04</span>
+                <div>
+                  <h3>ContractSkill: Repairable Contract-Based Skills for Multimodal Web Agents</h3>
+                  <p class="publication-authors">Authors：Zijian Lu, Yiping Zuo, Yupeng Nie, Xin He, Weibei Fan, Lianyong Qi, Shi Jin</p>
+                  <p class="publication-meta">Venue：arXiv preprint arXiv:2603.20340 <span aria-hidden="true">·</span> Year：2026</p>
+                  <p>该工作将智能体技能组织为可执行、可验证和可局部修复的契约结构，为网络智能体中的工具调用、约束检查与故障恢复提供可迁移的方法基础。</p>
+                  <p class="publication-link"><a href="https://arxiv.org/abs/2603.20340">查看论文</a></p>
+                </div>
+              </article>
+              <article class="publication-item">
+                <span class="publication-number">05</span>
+                <div>
+                  <h3>VITAL-RAG: Invariance Race for Context Allocation in Coding Agents</h3>
+                  <p class="publication-authors">Authors：Z. Lu, Y. Lu, M. Chen, Y. Zuo, X. He, W. Wang, W. Fan</p>
+                  <p class="publication-meta">Venue：arXiv preprint arXiv:2607.26937 <span aria-hidden="true">·</span> Year：2026</p>
+                  <p>该工作研究有限上下文预算下的证据选择与信息分配，可为带宽、时延和上下文受限的网络智能体构建有效状态提供方法参考。</p>
+                  <p class="publication-link"><a href="https://arxiv.org/abs/2607.26937">查看论文</a></p>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
-      </section>
+      </article>
     </main>
 
     <footer class="site-footer">
